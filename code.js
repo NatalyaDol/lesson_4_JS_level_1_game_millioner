@@ -79,7 +79,8 @@ var check = function (answer, round) {
         alert('Вы ответили правильно на вопросы ' + '\n' + ++round);
         return true;
     } else {
-        alert(':( Вы проиграли ' + '\n' + 'Количество правильных ответов =  ' + round);
+        alert(':( Вы проиграли ' + '\n' + 'Количество правильных ответов =  ' + round + 
+         '\n' + 'Правильный ответ №' + QUESTIONS[round].correct + '\n' + QUESTIONS[round].answers[(QUESTIONS[round].correct)-1]);
         return false;
     }
     
